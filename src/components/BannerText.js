@@ -35,31 +35,31 @@ const BannerText = () => {
 
             <Grid container sx={{ mt:{xs:"20px",sm:"30px",md:"40px",lg:"60px"}, alignItems: 'flex-end', justifyContent: 'space-evenly',p:"10px",pb:"20px" }}>
                 <Grid item xs={2} lg={1.2} md={1.5} sm={1.5} data-aos="fade-right">
-                    <Box sx={{height:{lg:"110px",md:"105px",sm:"95px",xs:"75px"}}}>
+                    <Box sx={{height:{lg:"110px",md:"90px",sm:"80px",xs:"65px"}}}>
                          <img src={maths} height={"100%"} width={"100%"}/>
                          <Typography align='center' sx={{fontSize:{lg:"17px",md:"18px",sm:"12px",xs:"10px"},whiteSpace:"nowrap",fontWeight:"900",color:"white",mt:"-5px"}}>MATH</Typography>
                     </Box>
                 </Grid>
                 <Grid item xs={2} lg={1.2} md={1.5} sm={1.5} data-aos="fade-down">
-                    <Box sx={{height:{lg:"110px",md:"105px",sm:"95px",xs:"75px"}}}>
+                    <Box sx={{height:{lg:"110px",md:"90px",sm:"80px",xs:"65px"}}}>
                          <img src={science1} height={"100%"} width={"100%"}/>
                          <Typography align='center' sx={{fontSize:{lg:"17px",md:"18px",sm:"12px",xs:"10px"},whiteSpace:"nowrap",fontWeight:"900",color:"white",mt:"-5px"}}>SCIENCE</Typography>
                     </Box>
                 </Grid>
                 <Grid item xs={2} lg={1.2} md={1.5} sm={1.5} data-aos="fade-up">
-                    <Box sx={{height:{lg:"110px",md:"105px",sm:"95px",xs:"75px"}}}>
+                    <Box sx={{height:{lg:"110px",md:"90px",sm:"80px",xs:"65px"}}}>
                          <img src={fench} height={"100%"} width={"100%"}/>
                          <Typography align='center' sx={{fontSize:{lg:"17px",md:"18px",sm:"12px",xs:"10px"},whiteSpace:"nowrap",fontWeight:"900",color:"white",mt:"-5px"}}>FRENCH</Typography>
                     </Box>
                 </Grid>
                 <Grid item xs={2} lg={1.2} md={1.5} sm={1.5} data-aos="fade-down">
-                    <Box sx={{height:{lg:"110px",md:"105px",sm:"95px",xs:"75px"}}}>
+                    <Box sx={{height:{lg:"110px",md:"90px",sm:"80px",xs:"65px"}}}>
                          <img src={english} height={"100%"} width={"100%"}/>
                          <Typography align='center' sx={{fontSize:{lg:"17px",md:"18px",sm:"12px",xs:"10px"},whiteSpace:"nowrap",fontWeight:"900",color:"white",mt:"-5px"}}>English</Typography>
                     </Box>
                 </Grid>
                 <Grid item xs={2} lg={1.2} md={1.5} sm={1.5} data-aos="fade-left">
-                    <Box sx={{height:{lg:"110px",md:"105px",sm:"95px",xs:"75px"}}}>
+                    <Box sx={{height:{lg:"110px",md:"90px",sm:"80px",xs:"65px"}}}>
                          <img src={test} height={"100%"} width={"100%"}/>
                          <Typography align='center' sx={{fontSize:{lg:"17px",md:"18px",sm:"12px",xs:"10px"},whiteSpace:"nowrap",fontWeight:"900",color:"white",mt:"-5px"}}>TEST PREP</Typography>
                     </Box>
