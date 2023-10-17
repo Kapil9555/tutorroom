@@ -1,0 +1,25 @@
+1. Logo
+   Logo changed from both panels ( frontend and admin )
+
+3. Contact
+   contact details updated with the provided details from footer , privacy and policy , faq or about sections
+
+4. index.html
+   changed the title and description of the website for SEO work
+
+5. Banner Details
+   changed the banner details and updated the marquee as per  the direct admissions info 
+
+6. Banner image
+   changed the banner image 
+
+7. Advertisment section
+   removed all the advertisment sections from every page of the frontend
+
+8. Routes update
+   updated all the routes of all the pages form website
+
+9. Admin Panel
+   changed the UI of Leads page with CSV download for leads
+
+10. Backend follwed the instructions provided by the office to update colleges etc. 

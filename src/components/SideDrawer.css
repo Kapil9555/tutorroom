@@ -1,0 +1,21 @@
+.controlHoverServices{
+padding: 0px;
+ cursor: pointer; 
+ background-color:#2979ff;
+  color: black;
+   width: 2px; 
+   height: 40px;
+display: flex; 
+align-items: center ;
+    cursor: pointer;
+transition: 0.37s ease;
+}
+.controlHoverServicesParent:hover .controlHoverServices{
+    width: 100%;
+    padding: 10px;
+
+}
+.controlHoverServicesParent:hover .controlHoverServicesText{
+font-weight: 900;
+color: white;
+} 
