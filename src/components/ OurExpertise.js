@@ -33,7 +33,7 @@ const OurExpertise = () => {
         ].map((item) => {
             return <div  onMouseDown={() => (setIsMouseDown(false))} onMouseOut={() => (setIsMouseDown(true))} key={item.title} className="card-container">
                 <div className="card">
-                    <h2><strong>{item.title.slice(0, 19) + '...'}</strong></h2>
+                    <h2><strong>{item.title.length>18?item.title.slice(0, 17) + '...':item.title}</strong></h2>
                     <p>{item.desc}</p>
                     <div className="layers">
                         <div className="layer"></div>
