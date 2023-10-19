@@ -55,9 +55,6 @@ function App() {
           <Route exact path="wordpress" element={<Wordpress />} />  
           <Route exact path="welcome" element={<LandingLayout />} />
           <Route exact path="privacy" element={<PrivacyPolicy />} />
-         
-
-          
         </Routes>
       </Router>
     </>
