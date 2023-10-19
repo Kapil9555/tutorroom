@@ -31,16 +31,16 @@ export default function Header() {
                                 {/* <img src={logo}  style={{ cursor: 'pointer',}} alt='pic' /> */}
                                 {/* <Typography sx={{ml:"10px",color:"white",fontSize:{lg:"20px",md:"20px",sm:"17px",xs:"15px"},fontWeight:"800"}}>AdelSocial</Typography> */}
                                 {/* </div> */}
-                                <Box onClick={() => navigate('/')} sx={{ userSelect: 'none', cursor: "pointer", width: { lg: "190px", sm: "180px", md: '160px', xs: '140px' }, height: { lg: '50px', md: '50px', xs: '40px' }, bgcolor: "white", borderRadius: '10px', p: '5px 15px' }}>
+                                <Box onClick={() => navigate('/')} sx={{ userSelect: 'none', cursor: "pointer", width: { lg: "190px", sm: "180px", md: '140px', xs: '140px' }, height: { lg: '50px', md: '50px', xs: '40px' }, bgcolor: "white", borderRadius: '10px', p: '5px 15px' }}>
                                     <img src={mytutorlogo} alt='pic' width="100%" height="100%" style={{ cursor: "pointer" }} />
                                 </Box>
                             </div>
                             {/* <img width="200px" className='imgStyles' height="50px" style={{ aspectRatio: "auto 165 / 35" }} src={logo} alt="logo" /> */}
                         </Box>
-                        <Box sx={{ display: "flex", justifyContent: "space-between", width: "100%", alignItems: "center", ml: "30px" }}>
+                        <Box sx={{ display: "flex", justifyContent: "space-between", width: "100%", alignItems: "center", ml:{ lg:"30px",md:"0px",sm:"10px",xs:"10px"} }}>
 
 
-                            {state.currentScreenSize > 918 && <Box sx={{ display: "flex", justifyContent: "space-between", width: { lg: "65%", md: "90%", sm: "90%", xs: "90%" }, }}>
+                            {state.currentScreenSize > 918 && <Box sx={{ display: "flex", justifyContent: "space-between", width: { lg: "65%", md: "80%", sm: "90%", xs: "90%" }, }}>
                                 <MegaMenu title="Home" />
                                 <MegaMenu title="About" navigateHandlerTitleRoute='/about' />
                                 <MegaMenu title="Services" data={servivessection}  navigateHandlerTitleRoute='/services' />
@@ -50,13 +50,13 @@ export default function Header() {
                                 <MegaMenu title="Contact" navigateHandlerTitleRoute='/contact' />
                             </Box>}
 
-                            <Box sx={{ display: "flex", justifyContent: "right", width: { lg: "35%", md: "10%", sm: "100%", xs: "100%" } }}>
+                            <Box sx={{ display: "flex", justifyContent: "right", width: { lg: "35%", md: "20%", sm: "100%", xs: "100%" } }}>
                                 {/* <IconButton sx={{ color: state.trigger ? SECONDARY_COLOR : MAIN_COLOR, '&:hover': { opacity: 0.6 }, transition: "all 0.70s ease", }}>
                                 <SearchOutlinedIcon />
                             </IconButton> */}
-                                <Button variant='outlined' sx={{ border: state.trigger && `1px solid ${SECONDARY_COLOR}`, "&:hover": { border: state.trigger && `1px solid ${SECONDARY_COLOR}` }, color: state.trigger ? SECONDARY_COLOR : 'white', fontSize: { lg: '16px', md: '15px', sm: '14px', xs: '14px' }, textTransform: 'unset', fontWeight: 900,mr: '10px' }}>Login</Button>
+                                <Button variant='outlined' sx={{ border: state.trigger && `1px solid ${SECONDARY_COLOR}`, "&:hover": { border: state.trigger && `1px solid ${SECONDARY_COLOR}` }, color: state.trigger ? SECONDARY_COLOR : 'white', fontSize: { lg: '16px', md: '15px', sm: '14px', xs: '11px' },p:{xs:"0px",sm:"5px",md:"3px 10px",lg:"3px 10px"}, textTransform: 'unset', fontWeight: 900,mr: '10px' }}>Login</Button>
                                 {/* <MenuIcon onClick={() => dispatch({ type: "DRAWER_CLICKED", payload: true })} sx={{ ml: '20px', cursor: 'pointer',  }} /> */}
-                                <Button variant='outlined' sx={{ border: state.trigger && `1px solid ${SECONDARY_COLOR}`, "&:hover": { border: state.trigger && `1px solid ${SECONDARY_COLOR}` }, color: state.trigger ? SECONDARY_COLOR : 'white', fontSize: { lg: '16px', md: '15px', sm: '14px', xs: '14px' }, textTransform: 'unset', fontWeight: 900}}>Sign Up</Button>
+                                <Button variant='outlined' sx={{ border: state.trigger && `1px solid ${SECONDARY_COLOR}`, "&:hover": { border: state.trigger && `1px solid ${SECONDARY_COLOR}` }, color: state.trigger ? SECONDARY_COLOR : 'white', fontSize: { lg: '16px', md: '15px', sm: '14px', xs: '11px' },p:{xs:"0px",sm:"5px",md:"3px 10px",lg:"3px 10px"}, textTransform: 'unset', fontWeight: 900}}>Sign Up</Button>
                             </Box>
                         </Box>
 

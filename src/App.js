@@ -29,17 +29,16 @@ function App() {
       </div >
       <FloatingWhatsApp
         accountName="Tutor Room"
-        buttonClassName="whatsappButton"
         avatar={AVATAR_IMAGE}
         phoneNumber={`${MOBILE}`}
         statusMessage="Typically replies within 1 hour"
         chatMessage={`Hello there! 🤝 How can we help?`}
         darkMode={false}
         allowEsc
-        style={{position:"fixed",bottom: "75px",right:"20px",z-index:9}}
+        buttonStyle={{position: "fixed",bottom: "73px",right: "20px",zIndex:1000,}}
+        style={{ position: "fixed", bottom: "73px",right: "20px",zIndex:1000}}
         allowClickAway
         notification
-         
         notificationSound
       />
 
