@@ -10,7 +10,7 @@ import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import LuggageIcon from '@mui/icons-material/Luggage';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import adelteam from '../../assets/adelteam.jpg';
+import adelteam from '../../assets/acad1.jpeg';
 import new1 from '../../assets/androidnew2.jpg';
 import awspic from '../../assets/androidpage.jpg';
 import Footer from '../../components/Footer';
@@ -18,7 +18,14 @@ import Header from '../../components/Header';
 import { MAIN_COLOR } from '../../constant';
 import BottomNavBar from '../../global/BottomNavBar';
 import useBottomBar from '../../utils/useBottomBar';
-import androidnew2 from '../../assets/androidnew2.avif'
+import androidnew2 from '../../assets/requesttut.jpg'
+import Groups2Icon from '@mui/icons-material/Groups2';
+import Diversity1Icon from '@mui/icons-material/Diversity1';
+import LanIcon from '@mui/icons-material/Lan';
+import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
+import TranslateIcon from '@mui/icons-material/Translate';
+import QuizIcon from '@mui/icons-material/Quiz';
+import HomeWorkIcon from '@mui/icons-material/HomeWork';
 import '../Homepage.css';
 
 import { useEffect } from 'react';
@@ -34,38 +41,38 @@ const AndroidNewPage = () => {
  },[])
 
     const AllBuisness = [{
-        icon: <ApartmentIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
-        name: "Healthcare"
+        icon: <LiveTvIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
+        name: "1:1 Live Tutoring"
     },
     {
-        icon: <ChairAltIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
-        name: "Education & E-Learning"
+        icon: <Diversity1Icon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
+        name:"Group Tutoring"
     },
     {
-        icon: <AddShoppingCartIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
-        name: "Retail & E-Commerce"
+        icon: <LanIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
+        name: "k-12"
     },
     {
         icon: <AccountBalanceIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
-        name: "Banking & Finance"
+        name: "College/University"
     },
     {
-        icon: <LuggageIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
-        name: "Travel & Tourism"
+        icon: <LocalLibraryIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
+        name: "Accelerated Learning"
     },
     {
-        icon: <LiveTvIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
-        name: "Media & Entertainment"
-    },
-
-    {
-        icon: <LocalShippingIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
-        name: "Transport & Logistics"
+        icon: <TranslateIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
+        name: "Foreign Language"
     },
 
     {
-        icon: <DomainIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
-        name: "Real Estate"
+        icon: <QuizIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
+        name: "Test/Exam Prep"
+    },
+
+    {
+        icon: <HomeWorkIcon sx={{ fontSize: "60px", color: MAIN_COLOR }} />,
+        name: "Homework Help"
     },
 
     ]
@@ -89,14 +96,13 @@ const AndroidNewPage = () => {
                                 <Box sx={{ lineHeight: "10", pt: '40px' }}>
                                     <Box>
                                         <Typography variant='h3' sx={{ fontWeight: "800", color: "white",  fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}}}>
-                                            Hire Adnroid Developer Developers
+                                        Request an Expert Tutor Today
                                         </Typography>
                                         <Typography sx={{ color: "white", mt: "20px", fontSize: { lg: "15px", xs: '13px', md: '15px',sm:"14px" } }}>
-                                            Get Zero Headache Adnroid Developers who are ready to take your project within 24 hours and carry out project development efficiently by following the best Adnroid development practices. We, at AdelSocial, leave no stone unturned in delivering bug-free and high-performance Adnroid solutions.
-                                        </Typography>
+                                        Our tutors are exceptionally skilled in their subjects and ready to provide tutoring services 24/7. They are passionate about what they do and find fulfillment in your success. Tutors at My Tutor Room leave no stone unturned in delivering a high-quality and transformative learning experience                                        </Typography>
                                         <Box sx={{ mt: "40px", display: "flex", justifyContent: { xs: "center", sm: "center", md: "center", lg: "left" } }}>
                                             <Button variant='contained' sx={{ textTransform: 'unset', bgcolor: MAIN_COLOR, fontSize: "17px", borderRadius: "16px", fontWeight: "800", p: "10px 40px", "&:hover": { bgcolor: MAIN_COLOR } }}>
-                                                Hire Now
+                                            Request a Tutor
                                             </Button>
                                         </Box>
                                     </Box>
@@ -111,8 +117,8 @@ const AndroidNewPage = () => {
 
                     <Grid container sx={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', bgcolor:"rgba(10,8,59,0.9)", padding: '10px'}}>
                     <Grid item lg={4.5} md={4.5} sm={12} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} >
-                        <Typography variant='h2' sx={{fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, fontWeight: '600', color: MAIN_COLOR }}>Who Are We?</Typography>
-                        <Typography variant='subtitle2' sx={{fontSize: { lg: "15px", xs: '13px', md: '15px',sm:"14px" }, mt: '20px', color: '#eeeeee' }}>AdelSocial is a privately owned IT Support and IT Services business formed in 2020. Today we’re proud to boast a strong team of IT engineers who thrive on rolling up their sleeves and solving your IT problems and meeting your business needs. Our vertical solutions expertise allows your business to streamline workflow, and increase productivity. No matter the business, AdelSocial has you covered with industry-compliant solutions, customized to your company’s specific needs.</Typography>
+                        <Typography variant='h2' sx={{fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, fontWeight: '600', color: MAIN_COLOR }}>1:1 Live Tutoring</Typography>
+                        <Typography variant='subtitle2' sx={{fontSize: { lg: "15px", xs: '13px', md: '15px',sm:"14px" }, mt: '20px', color: '#eeeeee' }}>Our tutoring programs are customized to give each student an individualized learning experience they can’t always get in the classroom. One that delivers results and builds confidence.  Our goal is to improve students’ academic performances in all subjects by providing guided explanations, homework assistance, and test preparation. </Typography>
                     </Grid>
                     <Grid item lg={5} md={5} sm={12} xs={12} sx={{ mt: { lg: '0px', md: '0px', sm: '5px', xs: '8px' }, display: 'flex', justifyContent: 'center', alignItems: 'center' }} >
                         <Box sx={{ width: { lg: '80%', md: '80%', sm: '100%', xs: '100%' }, height: { lg: '400px', md: '400px', sm: '390px', xs: '350px' }, borderRadius: { lg: '15%', md: '15%', sm: '10%', xs: '10px' }, mt: '25px' }}>
@@ -120,15 +126,15 @@ const AndroidNewPage = () => {
                         </Box>
                     </Grid>
                 </Grid>
-                <Grid container sx={{ flexWrap: "wrap-reverse", display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', bgcolor: 'rgba(10,8,59,0.9)', pb: "20px", padding: '10px', }}>
+                <Grid container sx={{ flexWrap: "wrap-reverse", display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', bgcolor: 'rgba(10,8,59,0.9)', pb: "20px", }}>
                     <Grid item lg={5} md={5} sm={12} xs={12} data-aos="fade-up" sx={{ mt: { lg: '0px', md: '0px', sm: '5px', xs: '15px' }, display: 'flex', justifyContent: 'center', alignItems: 'center', }} >
                         <Box sx={{ width: { lg: '80%', md: '80%', sm: '100%', xs: '100%' }, height: '350px', borderRadius: '10%' }}>
                             <img src={adelteam} alt='meeting' width={'100%'} height={'100%'} style={{ borderRadius: '10%' }} />
                         </Box>
                     </Grid>
                     <Grid item lg={4.5} md={5} sm={12} xs={12} data-aos="fade-up" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} >
-                        <Typography variant='h4' sx={{  fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, fontWeight: '600', m: '20px', color: MAIN_COLOR }}>OUR VISION</Typography>
-                        <Typography sx={{ fontSize: { lg: "15px", xs: '13px', md: '15px',sm:"14px" }, color: '#eeeeee', ml: "" }}>We have established ourselves as an effusive IT agency that strives to value ethics, commitment, and quality to our clients. We are constantly working to maintain our positions as the best and to elevate ourselves by providing exceptional services.</Typography>
+                        <Typography variant='h4' sx={{  fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, fontWeight: '600', m: '20px', color: MAIN_COLOR }}>Group Tutoring</Typography>
+                        <Typography sx={{ fontSize: { lg: "15px", xs: '13px', md: '15px',sm:"14px" }, color: '#eeeeee', ml: "" }}>Our tutors are qualified to provide small and medium-sized group tutoring to students of various grade levels. Group tutoring is ideal for parents who have a low budget but with high academic outcomes for their children. In this setting, students are prone to engage interactively with other students and can pick up very quickly from their peers. </Typography>
                     </Grid>
                 </Grid>
                     </Grid>
@@ -139,10 +145,10 @@ const AndroidNewPage = () => {
                     <Box sx={{ display: "flex", justifyContent: "center", mb: '20px' }} data-aos="fade-up">
                         <Box sx={{ width: { xs: "90%", sm: "90%", md: "70%", lg: "80%" }, mt: "20px" }}>
                             <Typography  align='center' sx={{fontSize:{lg:"33px",md:"30px",sm:"28px",xs:"22px"}, fontWeight: "800", color: MAIN_COLOR }} >
-                                We Build Scalable Android Solutions for All Business Verticals
+                            We Strive to Ensure Maximum Success for All Students we Encounter.
                             </Typography>
                             <Typography sx={{  fontSize: { lg: "15px", xs: '13px', md: '15px',sm:"14px" },textAlign: { xs: "", sm: "", md: "center", lg: "center" }, mt: "10px" }}>
-                                When you hire Android app developers from AdelSocial, you hire a team of Android specialists that holds expertise in developing Android solutions for a diverse range of industry verticals.
+                            When you hire an expert tutor from My Tutor Room, you invest in your child’s learning needs and their desire to forge a brighter future. 
                             </Typography>
                         </Box>
                     </Box>
