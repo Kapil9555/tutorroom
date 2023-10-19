@@ -36,8 +36,10 @@ function App() {
         chatMessage={`Hello there! 🤝 How can we help?`}
         darkMode={false}
         allowEsc
+        style={{position:"fixed",bottom: "75px",right:"20px",z-index:9}}
         allowClickAway
         notification
+         
         notificationSound
       />
 
