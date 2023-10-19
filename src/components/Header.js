@@ -1,18 +1,14 @@
-import { AppBar, Toolbar, CssBaseline, Box, Typography, IconButton, Button, Grid, Menu, MenuItem } from '@mui/material';
+import { AppBar, Box, Button, CssBaseline, Grid, Toolbar } from '@mui/material';
 // import logo from '../assets/logo.png'
-import ScrollToColor from "../global/ScrollToColor";
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import MenuIcon from '@mui/icons-material/Menu';
 import { useContext } from 'react';
-import { AdelContext } from '../store/Context';
-import { MAIN_COLOR, SECONDARY_COLOR } from '../constant';
-import MegaMenu from "../utils/MegaMenu";
-import { items, solutionsSection } from '../global/NavbarData'
-import '../pages/Homepage.css'
 import { useNavigate } from 'react-router-dom';
-import mytutorlogo from '../assets/logotut.jpg';
-import { useState } from 'react';
-import Fade from '@mui/material/Fade';
+import mytutorlogo from '../assets/jpeg 1.jpg';
+import { SECONDARY_COLOR } from '../constant';
+import { servivessection, solutionsSection } from '../global/NavbarData';
+import ScrollToColor from "../global/ScrollToColor";
+import '../pages/Homepage.css';
+import { AdelContext } from '../store/Context';
+import MegaMenu from "../utils/MegaMenu";
 
 
 
@@ -35,7 +31,7 @@ export default function Header() {
                                 {/* <img src={logo}  style={{ cursor: 'pointer',}} alt='pic' /> */}
                                 {/* <Typography sx={{ml:"10px",color:"white",fontSize:{lg:"20px",md:"20px",sm:"17px",xs:"15px"},fontWeight:"800"}}>AdelSocial</Typography> */}
                                 {/* </div> */}
-                                <Box onClick={() => navigate('/')} sx={{ userSelect: 'none', cursor: "pointer", width: { lg: "170px", sm: "120px", md: '150px', xs: '100px' }, height: { lg: '50px', md: '50px', xs: '40px' }, bgcolor: "white", borderRadius: '10px', p: '5px 15px' }}>
+                                <Box onClick={() => navigate('/')} sx={{ userSelect: 'none', cursor: "pointer", width: { lg: "190px", sm: "180px", md: '160px', xs: '140px' }, height: { lg: '50px', md: '50px', xs: '40px' }, bgcolor: "white", borderRadius: '10px', p: '5px 15px' }}>
                                     <img src={mytutorlogo} alt='pic' width="100%" height="100%" style={{ cursor: "pointer" }} />
                                 </Box>
                             </div>
@@ -44,12 +40,12 @@ export default function Header() {
                         <Box sx={{ display: "flex", justifyContent: "space-between", width: "100%", alignItems: "center", ml: "30px" }}>
 
 
-                            {state.currentScreenSize > 918 && <Box sx={{ display: "flex", justifyContent: "space-between", width: { lg: "65%", md: "90%", sm: "90%", xs: "90%" } }}>
+                            {state.currentScreenSize > 918 && <Box sx={{ display: "flex", justifyContent: "space-between", width: { lg: "65%", md: "90%", sm: "90%", xs: "90%" }, }}>
                                 <MegaMenu title="Home" />
                                 <MegaMenu title="About" navigateHandlerTitleRoute='/about' />
-                                <MegaMenu title="Services" navigateHandlerTitleRoute='/itservices' />
+                                <MegaMenu title="Services" data={servivessection}  navigateHandlerTitleRoute='/services' />
                                 <MegaMenu title="Homework Help" />
-                                <MegaMenu title="Job Openings" data={solutionsSection} navigateHandlerTitleRoute='/jobopenings' />
+                                <MegaMenu title="Job Openings" data={solutionsSection} />
                                 
                                 <MegaMenu title="Contact" navigateHandlerTitleRoute='/contact' />
                             </Box>}
@@ -58,9 +54,9 @@ export default function Header() {
                                 {/* <IconButton sx={{ color: state.trigger ? SECONDARY_COLOR : MAIN_COLOR, '&:hover': { opacity: 0.6 }, transition: "all 0.70s ease", }}>
                                 <SearchOutlinedIcon />
                             </IconButton> */}
-                                <Button variant='outlined' sx={{ border: state.trigger && `1px solid ${SECONDARY_COLOR}`, "&:hover": { border: state.trigger && `1px solid ${SECONDARY_COLOR}` }, color: state.trigger ? SECONDARY_COLOR : 'white', fontSize: { lg: '16px', md: '15px', sm: '14px', xs: '14px' }, textTransform: 'unset', fontWeight: 900, display: { xs: 'none', sm: 'none', md: "none", lg: "block" }, mr: '10px' }}>Login</Button>
+                                <Button variant='outlined' sx={{ border: state.trigger && `1px solid ${SECONDARY_COLOR}`, "&:hover": { border: state.trigger && `1px solid ${SECONDARY_COLOR}` }, color: state.trigger ? SECONDARY_COLOR : 'white', fontSize: { lg: '16px', md: '15px', sm: '14px', xs: '14px' }, textTransform: 'unset', fontWeight: 900,mr: '10px' }}>Login</Button>
                                 {/* <MenuIcon onClick={() => dispatch({ type: "DRAWER_CLICKED", payload: true })} sx={{ ml: '20px', cursor: 'pointer',  }} /> */}
-                                <Button variant='outlined' sx={{ border: state.trigger && `1px solid ${SECONDARY_COLOR}`, "&:hover": { border: state.trigger && `1px solid ${SECONDARY_COLOR}` }, color: state.trigger ? SECONDARY_COLOR : 'white', fontSize: { lg: '16px', md: '15px', sm: '14px', xs: '14px' }, textTransform: 'unset', fontWeight: 900, display: { xs: 'none', sm: 'none', md: "none", lg: "block" } }}>Sign Up</Button>
+                                <Button variant='outlined' sx={{ border: state.trigger && `1px solid ${SECONDARY_COLOR}`, "&:hover": { border: state.trigger && `1px solid ${SECONDARY_COLOR}` }, color: state.trigger ? SECONDARY_COLOR : 'white', fontSize: { lg: '16px', md: '15px', sm: '14px', xs: '14px' }, textTransform: 'unset', fontWeight: 900}}>Sign Up</Button>
                             </Box>
                         </Box>
 

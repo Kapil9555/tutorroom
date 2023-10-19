@@ -1,6 +1,6 @@
 import { Box, Divider, Grid, TextField, Typography } from '@mui/material'
 import React from 'react'
-import adel from '../assets/logotut.jpg'
+import adel from '../assets/png 1.png'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -14,7 +14,7 @@ const Footer = () => {
     const navigate = useNavigate()
     const year= new Date().getFullYear()
     
-    const companyArray = [{ title: 'Home', path: '/' }, { title: 'Service', path: '/itservices' }, { title: 'Contact', path: '/contact' }].map((item, index) => {
+    const companyArray = [{ title: 'Home', path: '/' }, { title: 'Service', path: '/services' }, { title: 'Contact', path: '/contact' }].map((item, index) => {
         return <Typography onClick={() => { navigate(`${item.path}`); window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }) }} key={index} sx={{
              
             fontSize: '15px',
@@ -23,7 +23,7 @@ const Footer = () => {
         }}>{item.title}</Typography>
     })
 
-    const supportArray = [{ title: 'Help center', path: '/' }, { title: 'Terms of services', path: '/terms' }, { title: 'Privacy policy', path: '/terms' }].map((item, index) => {
+    const supportArray = [{ title: 'Help center', path: '/' }, { title: 'Terms of services', path: '/terms' }, { title: 'Privacy policy', path: '/privacy' }].map((item, index) => {
         return <Typography onClick={() => { navigate(`${item.path}`); window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }) }} key={index} sx={{ transition: "all 0.30s ease", fontSize: '15px', fontWeight: "700", mt: "8px", borderBottom: '3px solid transparent', '&:hover': { opacity: 0.6, borderBottom: `3px solid ${HOVER_COLOR}`, cursor: 'pointer' } }}>{item.title}</Typography>
     })
 
@@ -67,7 +67,7 @@ const Footer = () => {
                 <Grid item xs={12} sm={12} md={6} lg={4} sx={{ display: "flex", justifyContent: "center", alignItems: 'center', flexDirection: 'column' }}>
                     <Box sx={{ width: "80%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                         <Box sx={{ width: "100%", display: 'flex', justifyContent: 'center' }}>
-                            <img src={adel} height="70px" width="60%" style={{ marginLeft: "-32px", }} alt='pic' />
+                            <img src={adel} height="60px" width="65%" style={{ marginLeft: "-32px", }} alt='pic' />
                         </Box>
                         <Box sx={{ display: "flex", mt: "40px", justifyContent: "space-between", width: "70%", alignItems: 'center' }}>
                             {socialIcons}
@@ -78,7 +78,7 @@ const Footer = () => {
 
             </Grid>
             <Grid container sx={{ p: '20px', justifyContent: 'center', bgcolor: '#404343', mb: "50px" }}>
-                <Typography textAlign={'center'} sx={{ fontSize: "14px", color: '#c3c3c3' }}>Copyright © {`${year}`} AdelSocial | All rights reserved</Typography>
+                <Typography textAlign={'center'} sx={{ fontSize: "14px", color: '#c3c3c3' }}>Copyright © {`${year}`} TutorRoom | All rights reserved</Typography>
             </Grid>
         </>
     )

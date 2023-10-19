@@ -12,6 +12,15 @@ import { useNavigate } from 'react-router-dom';
 export default function BottomNavBar() {
     const [value, setValue] = React.useState(0);
     const navigate = useNavigate()
+
+    
+    const handleNavigatorScroll =(item)=>{
+        navigate(`${item}`)
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+          });
+    }
     return (
         <Box sx={{ width: '100%', position: 'fixed', bottom: 0, zIndex: 9999 }}>
             <BottomNavigation
@@ -21,10 +30,10 @@ export default function BottomNavBar() {
                 onChange={(event, newValue) => {
                     setValue(newValue)
                 }}>
-                <BottomNavigationAction onClick={() => navigate('/')} style={{ fontWeight: 900, color: 'white' }} label="Home" icon={<HomeIcon sx={{ color: 'white' }} />} />
-                <BottomNavigationAction onClick={() => navigate('/about')} style={{ fontWeight: 900, color: 'white' }} label="About" icon={<EmailIcon sx={{ color: 'white' }} />} />
-                <BottomNavigationAction onClick={() => navigate('/jobopenings')} style={{ fontWeight: 900, color: 'white' }} label="Job Openings" icon={<WorkIcon sx={{ color: 'white' }} />} />
-                <BottomNavigationAction onClick={() => navigate('/contact')} style={{ fontWeight: 900, color: 'white' }} label="Contact" icon={<WifiCalling3Icon sx={{ color: 'white' }} />} />
+                <BottomNavigationAction onClick={() =>{handleNavigatorScroll('/')}} style={{ fontWeight: 900, color: 'white' }} label="Home" icon={<HomeIcon sx={{ color: 'white' }} />} />
+                <BottomNavigationAction onClick={() =>{handleNavigatorScroll('/about')} } style={{ fontWeight: 900, color: 'white' }} label="About" icon={<EmailIcon sx={{ color: 'white' }} />} />
+                <BottomNavigationAction onClick={() =>{handleNavigatorScroll('/services')}} style={{ fontWeight: 900, color: 'white' }} label="Services" icon={<WorkIcon sx={{ color: 'white' }} />} />
+                <BottomNavigationAction onClick={() =>{handleNavigatorScroll('/contact')} } style={{ fontWeight: 900, color: 'white' }} label="Contact" icon={<WifiCalling3Icon sx={{ color: 'white' }} />} />
             </BottomNavigation>
         </Box>
     );

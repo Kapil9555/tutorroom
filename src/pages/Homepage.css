@@ -256,10 +256,10 @@ width: 100%;
 }
   @media only screen and (max-width: 390px) {
     .servicesBoxhead{
-      font-size: 16px !important;
+      font-size: 18px !important;
     }
       .servicesBoxpara{
-      font-size: 14px !important;
+      font-size: 16px !important;
     }
 .servicesBox{
 height: 290px;
@@ -271,7 +271,7 @@ width: 100%;
       font-size: 18px !important;
     }
       .servicesBoxpara{
-      font-size: 14px !important;
+      font-size: 16px !important;
     }
 .servicesBox{
 height: 280px;
@@ -281,10 +281,10 @@ width: 100%;
 
   @media only screen and (max-width: 610px) {
     .servicesBoxhead{
-      font-size: 15px !important;
+      font-size: 18px !important;
     }
       .servicesBoxpara{
-      font-size: 12px !important;
+      font-size: 16px !important;
     }
 .servicesBox{
 height: 310px;

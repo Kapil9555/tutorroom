@@ -18,7 +18,7 @@ const ProposalInput = ({ style,title,button }) => {
                         <Button variant='contained' sx={{ fontSize: { xs: '14px' }, textTransform: { md: 'unset', lg: 'uppercase', xs: 'unset' } }}>{button} </Button>
                     </InputAdornment>
                 }
-                label="Password"
+               
             />
         </FormControl>
 

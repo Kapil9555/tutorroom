@@ -1,24 +1,24 @@
+import { Grid } from '@mui/material'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import { useContext, useEffect } from 'react'
-import Header from '../components/Header'
 import bg from '../assets/bg.png'
-import { Grid, duration } from '@mui/material'
-import BannerText from '../components/BannerText'
-import { AdelContext } from '../store/Context'
-import WhyUs from '../components/WhyUs'
-import WebHosting from '../components/WebHosting'
-import Footer from '../components/Footer'
-import SendProposal from '../components/SendProposal'
 import OurExpertise from '../components/ OurExpertise'
+import BannerText from '../components/BannerText'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 import SendMessage from '../components/SendMessage'
-import './Homepage.css'
-import CustomModal from '../global/Modal'
+import SendProposal from '../components/SendProposal'
+import WebHosting from '../components/WebHosting'
+import WhyUs from '../components/WhyUs'
 import BottomNavBar from '../global/BottomNavBar'
+import CustomModal from '../global/Modal'
+import { AdelContext } from '../store/Context'
 import useBottomBar from '../utils/useBottomBar'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import './Homepage.css'
 
 const Homepage = () => {
-    const { dispatch } = useContext(AdelContext)
+   
     const { state } = useBottomBar()
     // useEffect(() => {
     //     setTimeout(() => {

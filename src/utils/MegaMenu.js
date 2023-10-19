@@ -5,15 +5,7 @@ import { Box, Button, Grid, Typography } from '@mui/material'
 import { HOVER_COLOR, MAIN_COLOR, SECONDARY_COLOR } from '../constant'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-// format of getting data as a prop
-// const items = [
-//     {
-//         header: { title: "Header1", item_link: '/' }, data: [{ title: 'item1', item_link: "demo" }, { title: 'item2', item_link: "/" }, { title: 'item3', item_link: "/" }]
-//     },
-//     {
-//         header: { title: "Header2", item_link: '/' }, data: [{ title: 'item1', item_link: "/" }, { title: 'item2', item_link: "/" }, { title: 'item3', item_link: "/" }]
-//     },
-// ]
+
 
 
 const MegaMenu = ({ title = "GiveTitleName", data = [], navigateHandlerTitleRoute = '/' }) => {
@@ -34,6 +26,7 @@ const MegaMenu = ({ title = "GiveTitleName", data = [], navigateHandlerTitleRout
             fontWeight: 900,
             
             
+            
         
           
         },
@@ -47,6 +40,7 @@ const MegaMenu = ({ title = "GiveTitleName", data = [], navigateHandlerTitleRout
             lineHeight: 'initial',
             padding: '10px 0px',
             width: 'fit-content',
+            
            
             
            
@@ -61,6 +55,7 @@ const MegaMenu = ({ title = "GiveTitleName", data = [], navigateHandlerTitleRout
             width: 'fit-content',
             
             
+            
         }
     }
 
@@ -68,7 +63,26 @@ const MegaMenu = ({ title = "GiveTitleName", data = [], navigateHandlerTitleRout
         
            navigate(`${stateNavi}`)
            setStateNavi("")
-            console.log(stateNavi)
+           window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+          });
+    }
+
+    const handleNavigatorScroll =(item)=>{
+        navigate(`${item}`)
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+          });
+    }
+
+    const handleNavigatorScrollSec=(item)=>{
+        navigate(`${item}`)
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+          });
     }
    
 
@@ -79,11 +93,11 @@ const MegaMenu = ({ title = "GiveTitleName", data = [], navigateHandlerTitleRout
                     <Button onClick={() =>handleNavigator()} disableRipple disableElevation disableTouchRipple disableFocusRipple sx={style.navTitle} endIcon={<ExpandMoreIcon />}>
                         {title}
                     </Button>
-                    <Box component='div' className="dropdown-content" sx={{ borderTop: `9px solid ${MAIN_COLOR}`, borderBottom: `9px solid ${MAIN_COLOR}` ,width:{lg:'9.5%', md:'12%'} }}>
+                    <Box component='div' className="dropdown-content" sx={{ borderTop: `9px solid ${MAIN_COLOR}`, borderBottom: `9px solid ${MAIN_COLOR}` ,width:{lg:title == 'Services'?'17%':'11%', md:title == 'Services'?'17%':'12%'} }}>
                         <Grid container className="row">
                             {data.map((item, index) => {
                                 return <Grid item xs={12} component='div' key={index} sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-                                    <Typography variant='h1' onClick={() => navigate(`${item.header.item_link}`)} sx={style.megaMenuTitle} >{item.header.title}</Typography>
+                                    <Typography variant='h1' onClick={() => {handleNavigatorScroll(item.header.item_link)}} sx={style.megaMenuTitle} >{item.header.title}</Typography>
                                     {/* {item.data.map((nav, i) => {
                                         return <Typography variant='h5' key={i} onClick={() => navigate(`${nav.item_link}`)} sx={style.megaMenuItems} >{nav.title}</Typography>
                                     })} */}
@@ -98,7 +112,7 @@ const MegaMenu = ({ title = "GiveTitleName", data = [], navigateHandlerTitleRout
         return (
             <>
                 <Box component='div' className="dropdown">
-                    <Button onClick={() => navigate(`${navigateHandlerTitleRoute}`)} disableRipple disableElevation disableTouchRipple disableFocusRipple sx={style.navTitle} >
+                    <Button onClick={() =>{handleNavigatorScrollSec(navigateHandlerTitleRoute)}} disableRipple disableElevation disableTouchRipple disableFocusRipple sx={style.navTitle} >
                         {title}
                     </Button>
                 </Box>

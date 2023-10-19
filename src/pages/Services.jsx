@@ -64,7 +64,7 @@ const data = [
     }
 ];
 
-const About = () => {
+const Services = () => {
 
     const { state } = useBottomBar();
     const services = [
@@ -105,51 +105,14 @@ const About = () => {
                    
                     
                 </Grid> */}
-                <Grid container >
-                    <Grid item xs={12} sx={{ bgcolor: 'black', height:{lg:'470px',md:"400px",sm:"200px",xs:"200px"}, textAlign: "center", padding: '80px 25px' }}>
-                        <Typography variant='h1' sx={{ color: 'white', fontSize: { lg: '41px', xs: '20px' }, fontWeight: '600', mt: '15px' }}>Partner with My Tutor Room <br /><span style={{ color: MAIN_COLOR }}>Make Learning Engaging</span></Typography>
+                <Grid container sx={{}}>
+                    <Grid item xs={12} sx={{ bgcolor: 'black', height: '20px', textAlign: "center", padding: '80px 25px' }}>
+                        <Typography variant='h1' sx={{ color: 'white', fontSize: { lg: '41px', xs: '20px' }, fontWeight: '600', mt: '15px' }}>Our Services</Typography>
                         
                     </Grid>
-                    <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center',mb:{lg:"30px",md:"30px",sm:"0px",xs:"0px" }}}>
-                        <Grid item
-                            sx={{
-                                height: { lg: '500px',md:"450px",sm:"400", xs: 'auto' },
-                                overflow: "hidden",
-                                mt: {lg:'-15rem',md:"-13rem",sm:"0px",xs:"0px"},
-                                borderRadius: {lg:'20px',md:"20px",sm:"0px",xs:"0px"},
-                            }}
-                        >
-                        <div style={{width:"100%",height:"100%"}}>
-
-                            <ReactPlayer url={`${vedio}`} width="100%" height={"100%"} controls playing={true} />
-                        </div>
-                            </Grid>
-
-                        
-                        </Grid>
+                   
                     </Grid>
-                    <Grid container sx={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', bgcolor: '#f8f8f8', padding: '10px', bgcolor: '#080808', mt:{ lg:'10px',md:"10px",sm:"-10px",xs:"-10px"} }}>
-                        <Grid item lg={4.5} md={4.5} sm={12} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} data-aos="fade-right">
-                            <Typography variant='h2' sx={{ fontSize: { lg: '30px', md: '30px', sm: '30px', xs: '28px' }, fontWeight: '600', color: MAIN_COLOR }}>Who Are We?</Typography>
-                            <Typography variant='subtitle2' sx={{ fontSize: { lg: '16px', md: '16px', sm: '13px', xs: '14px', }, mt: '20px', color: '#eeeeee' }}>My Tutor Room is a privately-owned learning platform. We provide expert online tutoring services for all grade levels from K-12 to university at any time, and anywhere. Our services are convenient for both tutors, students, and institutions. Make no mistake, we guarantee you quality service, transformative learning experience and affordability. </Typography>
-                        </Grid>
-                        <Grid item lg={5} md={5} sm={12} xs={12} sx={{ mt: { lg: '0px', md: '0px', sm: '5px', xs: '8px' }, display: 'flex', justifyContent: 'center', alignItems: 'center' }} data-aos="fade-left">
-                            <Box sx={{ width: { lg: '80%', md: '80%', sm: '100%', xs: '100%' }, height: { lg: '400px', md: '400px', sm: '390px', xs: '350px' }, borderRadius: { lg: '15%', md: '15%', sm: '10%', xs: '10px' }, mt: '25px' }}>
-                                <img src={adelteam} alt='meeting' width={'100%'} height={'95%'} style={{ borderRadius: '10%' }} />
-                            </Box>
-                        </Grid>
-                    </Grid>
-                    <Grid container sx={{ flexWrap: "wrap-reverse", display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', bgcolor: '#080808', pb: "20px", padding: '10px', }}>
-                        <Grid item lg={5} md={5} sm={12} xs={12} sx={{ mt: { lg: '0px', md: '0px', sm: '5px', xs: '15px' }, display: 'flex', justifyContent: 'center', alignItems: 'center', }} data-aos="fade-right">
-                            <Box sx={{ width: { lg: '80%', md: '80%', sm: '100%', xs: '100%' }, height: '350px', borderRadius: '10%' }}>
-                                <img src={vision} alt='meeting' width={'100%'} height={'100%'} style={{ borderRadius: '10%' }} />
-                            </Box>
-                        </Grid>
-                        <Grid item lg={4.5} md={5} sm={12} xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} data-aos="fade-left">
-                            <Typography variant='h4' sx={{ fontSize: { lg: '30px', md: '30px', sm: '30px', xs: '28px' }, fontWeight: '600', m: '20px', color: MAIN_COLOR }}>OUR VISION</Typography>
-                            <Typography sx={{ fontSize: { lg: '16px', md: '16px', sm: '13px', xs: '14px', }, color: '#eeeeee', ml: "" }}>To ensure that everyone has access to an affordable learning environment at anytime and anywhere. </Typography>
-                        </Grid>
-                    </Grid>
+                   
                      <WhyUs/>
                    
                     <SendMessage />
@@ -159,4 +122,4 @@ const About = () => {
     );
 }
 
-export default About;
+export default Services;
